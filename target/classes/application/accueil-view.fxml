@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccueilController">
+   <children>
+      <Label layoutX="251.0" layoutY="14.0" text="ZOMBIE DICE" textFill="#ee0000">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <VBox layoutX="14.0" layoutY="82.0" prefHeight="125.0" prefWidth="700.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="357.0">
+               <children>
+                  <Label text="Nombre de joueurs :" />
+                  <TextField fx:id="nbJoueurs">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="700.0">
+               <children>
+                  <Label text="Difficulté :" />
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton fx:id="diffFacile" mnemonicParsing="false" text="Facile" />
+                        <Label text="8 dés verts" />
+                        <Label text="3 dés oranges" />
+                        <Label text="2 dés rouges" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton fx:id="diffMoyen" mnemonicParsing="false" text="Moyen" />
+                        <Label text="6 dés verts" />
+                        <Label text="4 dés oranges" />
+                        <Label text="3 dés rouges" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <RadioButton fx:id="diffDifficile" mnemonicParsing="false" text="Difficile" />
+                        <Label text="4 dés verts" />
+                        <Label text="5 dés oranges" />
+                        <Label text="4 dés rouges" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="jouerBouton" layoutX="569.0" layoutY="296.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #69ff40;" text="Jouer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="quitterBouton" layoutX="14.0" layoutY="296.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: ff4848;" text="Quitter">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="reglesBouton" layoutX="292.0" layoutY="296.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #60c2ff;" text="Règles du jeu">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

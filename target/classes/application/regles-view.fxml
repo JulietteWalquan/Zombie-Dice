@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="380.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="15.0" layoutY="88.0" prefHeight="278.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="261.0" prefWidth="341.0">
+               <children>
+                  <VBox prefHeight="188.0" prefWidth="349.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="C'est votre tour ! Piochez 3 dés au hasard puis lancez-les." wrappingWidth="346.646484375" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chaque dé représente un humain, votre future victime. Les dés rouges sont les plus coriaces, les verts les plus faciles et les jaunes sont entre les deux." wrappingWidth="334.13671875">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ils possèdent 3 symboles :">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cerveau : vous avez mangé le cerveau de votre victime, ce dé est gardé de côté jusqu'à la fin de votre tour." wrappingWidth="336.84375" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fusil : votre victime se défend ! Ce dé est également gardé de côté." wrappingWidth="348.13671875" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Empreintes : votre victime s'est échappée. Ce dé est gardé devant vous pour pouvoir le relancer si vous voulez." wrappingWidth="332.13671875" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="49.0" prefWidth="349.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dé vert : 3 Cerveaux, 2 Empreintes, 1 Fusil" wrappingWidth="332.13671875" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dé orange : 2 Cerveaux, 2 Empreintes, 2 Fusils" wrappingWidth="261.13671875">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dé rouge : 1 Cerveau, 2 Empreintes, 3 Fusils" wrappingWidth="273.13671875" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="425.0" prefWidth="333.0">
+               <children>
+                  <VBox prefHeight="169.0" prefWidth="350.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous avez obtenu 3 fusils, votre tour est terminé. Sinon vous pouvez soit arrêté votre tour et comptabiliser les points gagnés, soit continuer votre tour." wrappingWidth="349.13671875" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous arrêtez votre tour, vous gagnez 1 point par cerveau gagné puis c'est au tour du joueur suivant." wrappingWidth="349.13671875">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous décidez de continuer, les dés Empreintes seront réutilisés en plus de nouveaux dés pour en avoir 3 à lancer au total." wrappingWidth="348.13671875">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous obtenez 3 fusils ou plus durant votre tour, il s'arrête automatiquement et vous ne marquez aucun point." wrappingWidth="348.517578125">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A vous de choisir le meilleur moment pour arrêter votre tour !" wrappingWidth="349.13671875">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="350.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="La partie se termine lorsqu'un joueur obtient 13 cerveaux." wrappingWidth="348.13671875" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Le tour en cours se finit normalement pour que chaque joueur est joué un même nombre de fois. Celui qui a le plus de cerveaux à la fin de ce tour est le vainqueur !" wrappingWidth="348.13671875">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="251.0" layoutY="14.0" text="Règles du jeu" textFill="#ee0000">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
